@@ -5,9 +5,10 @@ body {
     margin: 0;
     padding: 0;
     /* Background image with fallback background-color */
-    background: url('/background.jpg') no-repeat center center fixed; /* <<<< THIS LINE HERE */
-    background-size: cover;
-    color: #333; /* This should probably be a lighter color if the background is dark */
+    /* background: url('background.jpg') no-repeat center center fixed; */ /* Commented out */
+    /* background-size: cover; */ /* Commented out */
+    background-color: #f0f0f0; /* ADD A FALLBACK/DEFAULT BACKGROUND COLOR - e.g., light gray */
+    color: #333;
     line-height: 1.6;
 }
 
