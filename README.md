@@ -4,9 +4,8 @@ Static site built with vanilla HTML/CSS/JS. Designed for GitHub Pages.
 
 ## Quick start
 
-1. Replace `assets/Andrew_Farell_Resume.pdf` with your actual resume PDF (keep the same name or update the link in `index.html`).
-2. Edit text in `index.html` as needed (About, Specialties, Experience).
-3. Push to GitHub and enable Pages (Settings → Pages → from branch).
+1. Edit text in `index.html` as needed (About, Specialties, Experience).
+2. Push to GitHub and enable Pages (Settings → Pages → from branch).
 
 ## Local preview
 
