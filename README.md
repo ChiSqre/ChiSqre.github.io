@@ -1,18 +1,9 @@
-# Andrew Farell — Personal Website
+# Andrew Farell — Personal Site
 
-Static site built with vanilla HTML/CSS/JS. Designed for GitHub Pages.
+Personal website built with plain HTML/CSS/JS and hosted on GitHub Pages.
 
-## Quick start
-
-1. Edit text in `index.html` as needed (About, Specialties, Experience).
-2. Push to GitHub and enable Pages (Settings → Pages → from branch).
-
-## Local preview
-
-Just open `index.html` in a browser, or use a static server:
+## Run locally
+Open `index.html` in a browser, or start a small server:
 
 ```bash
 python3 -m http.server
-```
-
-Then open http://localhost:8000 in your browser.
