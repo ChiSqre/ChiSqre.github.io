@@ -8,15 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/styles.css" />
+  <!-- cache-bust to avoid stale CSS on Pages/CDN -->
+  <link rel="stylesheet" href="assets/styles.css?v=2" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="Andrew Farell — Software Engineer">
   <meta property="og:description" content="Strategic planning, analytics &amp; data, ML, and network engineering. Based in Austin, TX.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="assets/og.svg">
   <style>
-    /* Ensure hero buttons always show nicely (especially LinkedIn) */
+    /* Keep hero buttons neat and always visible */
     .hero .cta{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+    /* We use gap above, so remove old right margin if present */
+    .btn{ margin-right:0; }
   </style>
 </head>
 <body id="top">
@@ -37,11 +40,7 @@
     <section class="hero container">
       <div class="hero-copy">
         <h1 class="name">Andrew Farell</h1>
-        <p class="kicker">Software Engineer · Austin, TX</p>
-        <p class="lede">
-          I build reliable software and data products. M.S. in Data Science. I enjoy problem-solving
-          and pushing ideas forward with my team.
-        </p>
+        <!-- removed the subtitle/kicker line by request -->
         <div class="cta">
           <a class="btn" href="#contact">Contact</a>
           <a class="btn ghost" href="https://github.com/ChiSqre" target="_blank" rel="noopener">GitHub</a>
@@ -186,7 +185,8 @@
     <div class="container small">© <span id="year"></span> Andrew Farell</div>
   </footer>
 
-  <script src="assets/script.js" defer></script>
+  <!-- cache-bust JS too -->
+  <script src="assets/script.js?v=2" defer></script>
 
   <script type="application/ld+json">
   {
